@@ -1,0 +1,66 @@
+Privacy Policy
+Last updated: September 21, 2026
+
+1. What we collect
+
+Data	Why	Stored where
+Name, email (if you create an account)	Account creation, subscription management	Supabase (cloud database)
+Medication names, dosages, conditions, allergies	To generate interaction results	Supabase
+Interaction results	To display your history	Supabase
+Device ID (anonymous)	Crash reporting, usage analytics	Supabase
+Subscription status	To manage your plan	RevenueCat
+
+We do NOT collect:
+
+Payment card details (handled entirely by Apple/Google)
+Location data
+Contacts or calendar access
+Health records from external sources (you type or scan manually)
+
+2. How your data is processed
+
+Drug interaction data is retrieved from the U.S. National Library of Medicine's DailyMed database (public, government-run). Your medication names are sent to this API to retrieve interaction information.
+AI explanations are generated using Google's Gemini API. The medication names and interaction text are sent to Google's servers to produce the plain-language output. Google's privacy policy applies to this processing: policies.google.com/privacy
+Subscription management is handled by RevenueCat. RevenueCat receives your anonymous user ID and subscription status. They do not receive your medication data. RevenueCat's privacy policy: revenuecat.com/privacy
+
+3. Where your data is stored
+
+Supabase (hosted by Supabase Inc., US-based infrastructure). Your data is encrypted at rest and in transit (TLS 1.3).
+We do not sell, rent, or share your medication data with third parties for advertising or any commercial purpose.
+
+4. Your rights
+
+You can, at any time:
+
+View your data in-app (Settings → My Data)
+Export your data as a CSV file
+Delete your account and all associated data (Settings → Delete Account). Deletion is permanent and completed within 30 days.
+Object to processing or restrict processing by contacting us at [your email]
+If you are in Canada, you have additional rights under PIPEDA. If you are in the EU/UK, you have rights under GDPR. Contact us to exercise any of these rights.
+
+5. Children's privacy
+
+The App is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, contact us and we will delete it.
+
+6. Data retention
+
+Active accounts: data is retained as long as your account is active.
+After deletion: data is permanently erased from Supabase within 30 days.
+Crash logs: retained for 90 days, then deleted.
+7. Data security
+
+All data is encrypted in transit (TLS) and at rest (AES-256)
+Access to your data is restricted to you and our technical infrastructure
+We do not use your data to train AI models
+
+8. Third-party services
+
+Service	What they see	Their privacy policy
+Supabase	Your account data, medication list	supabase.com/privacy
+Google (Gemini API)	Medication names + interaction text sent for AI explanation	policies.google.com/privacy
+RevenueCat	Anonymous user ID, subscription status	revenuecat.com/privacy
+Apple / Google Play	Payment processing only	apple.com/legal/privacy / policies.google.com/privacy
+
+9. Changes to this policy
+
+We may update this Privacy Policy. Material changes will be notified in-app or via email at least 14 days before taking effect.
