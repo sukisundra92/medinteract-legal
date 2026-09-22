@@ -100,7 +100,7 @@
     <tr><th>Data</th><th>Why</th><th>Stored where</th></tr>
   </thead>
   <tbody>
-    <tr><td>Name, email (if you create an account)</td><td>Account creation, subscription management</td><td>Supabase (cloud database)</td></tr>
+    <tr><td>Name, age, email (if you create an account)</td><td>Account creation, subscription management</td><td>Supabase (cloud database)</td></tr>
     <tr><td>Medication names, dosages, conditions, allergies</td><td>To generate interaction results</td><td>Supabase</td></tr>
     <tr><td>Interaction results</td><td>To display your history</td><td>Supabase</td></tr>
     <tr><td>Device ID (anonymous)</td><td>Crash reporting, usage analytics</td><td>Supabase</td></tr>
@@ -119,13 +119,17 @@
 </div>
 
 <h2>2. How your data is processed</h2>
-<p>Drug interaction data is retrieved from the U.S. National Library of Medicine's DailyMed database (public, government-run). Your medication names are sent to this API to retrieve interaction information.</p>
-<p>AI explanations are generated using Google's Gemini API. The medication names and interaction text are sent to Google's servers to produce the plain-language output. Google's privacy policy applies to this processing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
-<p>Subscription management is handled by RevenueCat. RevenueCat receives your anonymous user ID and subscription status. They do not receive your medication data. RevenueCat's privacy policy: <a href="https://revenuecat.com/privacy">revenuecat.com/privacy</a></p>
+<ul>
+  <li>Drug interaction data is retrieved from the U.S. National Library of Medicine's DailyMed database (public, government-run). Your medication names are sent to this API to retrieve interaction information.</li>
+  <li>AI explanations are generated using Google's Gemini API. The medication names and interaction text are sent to Google's servers to produce the plain-language output. Google's privacy policy applies to this processing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>Subscription management is handled by RevenueCat. RevenueCat receives your anonymous user ID and subscription status. They do not receive your medication data. RevenueCat's privacy policy: <a href="https://revenuecat.com/privacy">revenuecat.com/privacy</a></li>
+</ul>
 
 <h2>3. Where your data is stored</h2>
-<p>Supabase (hosted by Supabase Inc., US-based infrastructure). Your data is encrypted at rest and in transit (TLS 1.3).</p>
-<p>We do not sell, rent, or share your medication data with third parties for advertising or any commercial purpose.</p>
+<ul>
+  <li>Supabase (hosted by Supabase Inc., US-based infrastructure). Your data is encrypted at rest and in transit (TLS 1.3).</li>
+  <li>We do not sell, rent, or share your medication data with third parties for advertising or any commercial purpose.</li>
+</ul>
 
 <h2>4. Your rights</h2>
 <p>You can, at any time:</p>
@@ -133,4 +137,46 @@
   <li>View your data in-app (Settings → My Data)</li>
   <li>Export your data as a CSV file</li>
   <li>Delete your account and all associated data (Settings → Delete Account). Deletion is permanent and completed within 30 days.</li>
-  <li>Object to processing or restrict processing by contacting us at [your   
+  <li>Object to processing or restrict processing by contacting us at [your email]</li>
+</ul>
+<p>If you are in Canada, you have additional rights under PIPEDA. If you are in the EU/UK, you have rights under GDPR. Contact us to exercise any of these rights.</p>
+
+<h2>5. Children's privacy</h2>
+<p>The App is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
+
+<h2>6. Data retention</h2>
+<ul>
+  <li>Active accounts: data is retained as long as your account is active.</li>
+  <li>After deletion: data is permanently erased from Supabase within 30 days.</li>
+  <li>Crash logs: retained for 90 days, then deleted.</li>
+</ul>
+
+<h2>7. Data security</h2>
+<ul>
+  <li>All data is encrypted in transit (TLS) and at rest (AES-256)</li>
+  <li>Access to your data is restricted to you and our technical infrastructure</li>
+  <li>We do not use your data to train AI models</li>
+</ul>
+
+<h2>8. Third-party services</h2>
+<table>
+  <thead>
+    <tr><th>Service</th><th>What they see</th><th>Their privacy policy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Supabase</td><td>Your account data, medication list</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+    <tr><td>Google (Gemini API)</td><td>Medication names + interaction text sent for AI explanation</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+    <tr><td>RevenueCat</td><td>Anonymous user ID, subscription status</td><td><a href="https://revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+    <tr><td>Apple / Google Play</td><td>Payment processing only</td><td><a href="https://apple.com/legal/privacy">apple.com/legal/privacy</a> / <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  </tbody>
+</table>
+
+<h2>9. Changes to this policy</h2>
+<p>We may update this Privacy Policy at any time. Material changes will be notified in-app or via email.</p>
+
+<footer>
+  © 2026 MedInteract Plus. All rights reserved.
+</footer>
+
+</body>
+</html>   
