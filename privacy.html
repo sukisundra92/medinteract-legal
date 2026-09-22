@@ -1,66 +1,136 @@
-Privacy Policy
-Last updated: September 21, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – MedInteract Plus</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      line-height: 1.7;
+      color: #1D2B2A;
+      background: #F8FAF9;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+      color: #1D2B2A;
+    }
+    .date {
+      color: #6B7F7C;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #2A9D8F;
+    }
+    p, li {
+      font-size: 0.95rem;
+      color: #333;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    strong {
+      color: #1D2B2A;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #2A9D8F;
+      color: #fff;
+      text-align: left;
+      padding: 10px 12px;
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    tr:nth-child(even) {
+      background: #f0f5f4;
+    }
+    a {
+      color: #2A9D8F;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .not-collected {
+      background: #f0f5f4;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin: 1rem 0;
+    }
+    .not-collected strong {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+      color: #6B7F7C;
+    }
+  </style>
+</head>
+<body>
 
-1. What we collect
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: September 21, 2026</p>
 
-Data	Why	Stored where
-Name, email (if you create an account)	Account creation, subscription management	Supabase (cloud database)
-Medication names, dosages, conditions, allergies	To generate interaction results	Supabase
-Interaction results	To display your history	Supabase
-Device ID (anonymous)	Crash reporting, usage analytics	Supabase
-Subscription status	To manage your plan	RevenueCat
+<h2>1. What we collect</h2>
+<table>
+  <thead>
+    <tr><th>Data</th><th>Why</th><th>Stored where</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Name, email (if you create an account)</td><td>Account creation, subscription management</td><td>Supabase (cloud database)</td></tr>
+    <tr><td>Medication names, dosages, conditions, allergies</td><td>To generate interaction results</td><td>Supabase</td></tr>
+    <tr><td>Interaction results</td><td>To display your history</td><td>Supabase</td></tr>
+    <tr><td>Device ID (anonymous)</td><td>Crash reporting, usage analytics</td><td>Supabase</td></tr>
+    <tr><td>Subscription status</td><td>To manage your plan</td><td>RevenueCat</td></tr>
+  </tbody>
+</table>
 
-We do NOT collect:
+<div class="not-collected">
+  <strong>We do NOT collect:</strong>
+  <ul>
+    <li>Payment card details (handled entirely by Apple/Google)</li>
+    <li>Location data</li>
+    <li>Contacts or calendar access</li>
+    <li>Health records from external sources (you type or scan manually)</li>
+  </ul>
+</div>
 
-Payment card details (handled entirely by Apple/Google)
-Location data
-Contacts or calendar access
-Health records from external sources (you type or scan manually)
+<h2>2. How your data is processed</h2>
+<p>Drug interaction data is retrieved from the U.S. National Library of Medicine's DailyMed database (public, government-run). Your medication names are sent to this API to retrieve interaction information.</p>
+<p>AI explanations are generated using Google's Gemini API. The medication names and interaction text are sent to Google's servers to produce the plain-language output. Google's privacy policy applies to this processing: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
+<p>Subscription management is handled by RevenueCat. RevenueCat receives your anonymous user ID and subscription status. They do not receive your medication data. RevenueCat's privacy policy: <a href="https://revenuecat.com/privacy">revenuecat.com/privacy</a></p>
 
-2. How your data is processed
+<h2>3. Where your data is stored</h2>
+<p>Supabase (hosted by Supabase Inc., US-based infrastructure). Your data is encrypted at rest and in transit (TLS 1.3).</p>
+<p>We do not sell, rent, or share your medication data with third parties for advertising or any commercial purpose.</p>
 
-Drug interaction data is retrieved from the U.S. National Library of Medicine's DailyMed database (public, government-run). Your medication names are sent to this API to retrieve interaction information.
-AI explanations are generated using Google's Gemini API. The medication names and interaction text are sent to Google's servers to produce the plain-language output. Google's privacy policy applies to this processing: policies.google.com/privacy
-Subscription management is handled by RevenueCat. RevenueCat receives your anonymous user ID and subscription status. They do not receive your medication data. RevenueCat's privacy policy: revenuecat.com/privacy
-
-3. Where your data is stored
-
-Supabase (hosted by Supabase Inc., US-based infrastructure). Your data is encrypted at rest and in transit (TLS 1.3).
-We do not sell, rent, or share your medication data with third parties for advertising or any commercial purpose.
-
-4. Your rights
-
-You can, at any time:
-
-View your data in-app (Settings → My Data)
-Export your data as a CSV file
-Delete your account and all associated data (Settings → Delete Account). Deletion is permanent and completed within 30 days.
-Object to processing or restrict processing by contacting us at [your email]
-If you are in Canada, you have additional rights under PIPEDA. If you are in the EU/UK, you have rights under GDPR. Contact us to exercise any of these rights.
-
-5. Children's privacy
-
-The App is not intended for children under 13. We do not knowingly collect data from children under 13. If you believe a child has provided us with personal data, contact us and we will delete it.
-
-6. Data retention
-
-Active accounts: data is retained as long as your account is active.
-After deletion: data is permanently erased from Supabase within 30 days.
-Crash logs: retained for 90 days, then deleted.
-7. Data security
-
-All data is encrypted in transit (TLS) and at rest (AES-256)
-Access to your data is restricted to you and our technical infrastructure
-We do not use your data to train AI models
-
-8. Third-party services
-
-Service	What they see	Their privacy policy
-Supabase	Your account data, medication list	supabase.com/privacy
-Google (Gemini API)	Medication names + interaction text sent for AI explanation	policies.google.com/privacy
-RevenueCat	Anonymous user ID, subscription status	revenuecat.com/privacy
-Apple / Google Play	Payment processing only	apple.com/legal/privacy / policies.google.com/privacy
-
-9. Changes to this policy
-
-We may update this Privacy Policy. Material changes will be notified in-app or via email at least 14 days before taking effect.
+<h2>4. Your rights</h2>
+<p>You can, at any time:</p>
+<ul>
+  <li>View your data in-app (Settings → My Data)</li>
+  <li>Export your data as a CSV file</li>
+  <li>Delete your account and all associated data (Settings → Delete Account). Deletion is permanent and completed within 30 days.</li>
+  <li>Object to processing or restrict processing by contacting us at [your   
